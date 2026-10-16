@@ -387,8 +387,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/preset_voip.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voip.bin \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/boringssl_self_test.zygote64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/command.csv:$(TARGET_COPY_OUT_VENDOR)/etc/command.csv \
     vendor/infinix/X6728/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
@@ -459,7 +457,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.example-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example-mtk.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
@@ -468,10 +466,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/bat_authencali_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bat_authencali_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/chg_sence_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chg_sence_init.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/dts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dts.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default.rc \
@@ -623,9 +619,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/pnpmgr.db:$(TARGET_COPY_OUT_VENDOR)/etc/pnpmgr.db \
-    vendor/infinix/X6728/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/qt.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/qt.cfg \
     vendor/infinix/X6728/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
@@ -848,10 +841,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/infinix/X6728/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/infinix/X6728/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf \
-    vendor/infinix/X6728/proprietary/vendor/odm/etc/vintf/manifest_dsds.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_dsds.xml \
-    vendor/infinix/X6728/proprietary/vendor/odm/etc/vintf/manifest_qsqs.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_qsqs.xml \
-    vendor/infinix/X6728/proprietary/vendor/odm/etc/vintf/manifest_ss.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_ss.xml \
-    vendor/infinix/X6728/proprietary/vendor/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/vintf/manifest_tsts.xml \
     vendor/infinix/X6728/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
     vendor/infinix/X6728/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
     vendor/infinix/X6728/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
@@ -866,60 +855,12 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     TranCaptureFilter \
     VP9SecureVdecCA \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio.common@6.0 \
     android.hardware.audio.core-impl-mediatek \
-    android.hardware.audio.effect@6.0 \
-    android.hardware.audio@6.0 \
-    android.hardware.biometrics.common.thread \
     android.hardware.biometrics.extension.fingerprint-V1-ndk \
     android.hardware.bluetooth.audio-impl-mediatek \
-    android.hardware.bluetooth.audio@2.0 \
-    android.hardware.bluetooth.audio@2.1 \
-    android.hardware.boot@1.0 \
-    android.hardware.boot@1.1 \
-    android.hardware.camera.device@1.0 \
-    android.hardware.camera.device@3.2 \
-    android.hardware.camera.device@3.3 \
-    android.hardware.camera.device@3.4 \
-    android.hardware.camera.device@3.5 \
-    android.hardware.camera.provider@2.4 \
-    android.hardware.camera.provider@2.5 \
-    android.hardware.graphics.allocator@2.0 \
-    android.hardware.graphics.allocator@3.0 \
-    android.hardware.graphics.allocator@4.0 \
-    android.hardware.graphics.bufferqueue@1.0 \
-    android.hardware.graphics.bufferqueue@2.0 \
-    android.hardware.graphics.common@1.0 \
-    android.hardware.graphics.common@1.1 \
-    android.hardware.graphics.common@1.2 \
-    android.hardware.graphics.mapper@2.0 \
-    android.hardware.graphics.mapper@2.1 \
-    android.hardware.graphics.mapper@3.0 \
     android.hardware.light@2.0 \
-    android.hardware.media.bufferpool@2.0 \
-    android.hardware.media.c2@1.0 \
-    android.hardware.media.c2@1.1 \
-    android.hardware.media.c2@1.2 \
-    android.hardware.media.omx@1.0 \
-    android.hardware.media@1.0 \
     android.hardware.power-service-mediatek \
-    android.hardware.power@1.0 \
-    android.hardware.power@1.1 \
-    android.hardware.power@1.2 \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.renderscript@1.0 \
-    android.hardware.sensors@2.0 \
-    android.hidl.memory.token@1.0 \
-    android.hidl.memory@1.0 \
-    android.hidl.safe_union@1.0 \
-    android.hidl.token@1.0-utils \
-    android.hidl.token@1.0 \
     android.system.suspend@1.0 \
-    android.system.wifi.keystore@1.0 \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     chre_atoms_log \
@@ -1004,9 +945,6 @@ PRODUCT_PACKAGES += \
     libMtkSpeechEnh_swb \
     libNoFpsActor \
     libOpenCL \
-    libRSCpuRef \
-    libRSDriver \
-    libRS_internal \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1063,11 +1001,9 @@ PRODUCT_PACKAGES += \
     libaalservice \
     libabfadp \
     libacdk \
-    libaconfig_storage_read_api_cc \
     libaedv \
     libaimemc \
     libaipe_bokeh \
-    libalsautilsv2 \
     libanc_hdr \
     libanc_hdr_adapter_hi5022q_17201981_back_g81 \
     libanc_hdr_adapter_ov50d40_17201988_back_g81 \
@@ -1082,9 +1018,8 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
-    libaudio_aidl_conversion_common_ndk \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
-    libaudioaidlcommon \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -1096,17 +1031,9 @@ PRODUCT_PACKAGES += \
     libaudiopolicyconfigxml_mtk_vendor \
     libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
-    libaudioutils \
     libaurisysdemo \
-    libavservices_minijail \
-    libbase \
-    libbcinfo \
     libbessound_hd_mtk_vendor \
-    libbinder \
-    libbinderdebug \
-    libblas \
     libblisrc32_vendor \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_mtk \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
@@ -1116,7 +1043,6 @@ PRODUCT_PACKAGES += \
     libbluetoothem_mtk \
     libbt-vendor \
     libbwc \
-    libc++ \
     libcalculatesharpness \
     libcam.chdr \
     libcam.feature_utils \
@@ -1162,24 +1088,14 @@ PRODUCT_PACKAGES += \
     libcamdrv_isp \
     libcamdrv_tuning_mgr \
     libcamdrv_twin \
-    libcamera_metadata \
     libcameracustom.plugin \
     libcameracustom \
-    libcap \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
     libcharon-ss \
     libchromanr \
-    libclang_rt.ubsan_standalone-aarch64-android \
-    libcodec2 \
-    libcodec2_aidl \
     libcodec2_fsr \
-    libcodec2_hal_common \
-    libcodec2_hidl@1.0 \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
-    libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -1189,20 +1105,16 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_rs_plugin \
     libcolorenhance_64 \
     libcolorlevel \
-    libcompiler_rt \
     libcomposer_ext \
     libconnfem \
     libcrypto-mdapp \
-    libcrypto \
     libcurl-md \
     libcurl_xcap_md \
     libcustom_nvram \
-    libcutils \
     libcvsd_mtk \
     libdecrypt \
     libdenoise \
     libdeviceauthen \
-    libdmabufheap \
     libdts-eagle-shared \
     libdtsdsec \
     libdynamiclog \
@@ -1221,9 +1133,8 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libfgauge_gm30 \
     libfile_op \
-    libfmq \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libgamehdr \
     libged \
     libgpu_aux \
@@ -1231,7 +1142,6 @@ PRODUCT_PACKAGES += \
     libgpudataproducer \
     libgralloc_extra \
     libgralloc_metadata \
-    libgralloctypes \
     libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
@@ -1239,11 +1149,8 @@ PRODUCT_PACKAGES += \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
-    libhardware \
-    libhardware_legacy \
     libheichal \
     libhevce_sb.ca7.android \
-    libhidlbase \
     libhidparser \
     libhwm \
     libhydra \
@@ -1259,24 +1166,19 @@ PRODUCT_PACKAGES += \
     libitdfacebeauty \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libjpeg \
     libkaraoke \
     libkmsetkey \
     libladder \
     liblpcnr \
     liblvacfs_wrapper \
-    liblzma \
     libmbrainSDKv \
-    libmedia_helper \
-    libmediautils_vendor \
-    libmeminfo \
     libmfllcore \
     libminiui \
     libminizip \
     libmipc \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl \
+    libmnl-mtk \
     libmorpho_HDSR \
     libmp4enc_sa.ca7 \
     libmpbase \
@@ -1376,13 +1278,13 @@ PRODUCT_PACKAGES += \
     libmtkutils \
     libmvpu_config_data \
     libmvpu_wrapper \
-    libnl \
     libnvram \
     libnvram_sec \
     libnwk_opt_halwrap_vendor \
     libnxp_extamp_intf \
     liboemcrypto \
     libpaytrigger.trustonic \
+    libpcap-mtk \
     libperfctl_vendor \
     libpixelflinger \
     libpixsmart_hdr \
@@ -1402,9 +1304,6 @@ PRODUCT_PACKAGES += \
     libpqsharememory \
     libpqtuning \
     libpqxmlparser \
-    libprocinfo \
-    libprotobuf-cpp-full-21.12 \
-    libprotobuf-cpp-lite-21.12 \
     libratconfig \
     librcs_volte_core \
     libreference-ril \
@@ -1429,14 +1328,8 @@ PRODUCT_PACKAGES += \
     libsmartdetector \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libspeexresampler \
     libssl-mdapp \
-    libssl \
     libst_mobile \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefright_bufferqueue_helper \
-    libstagefright_foundation \
     libstblur_capture_api \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
@@ -1444,14 +1337,10 @@ PRODUCT_PACKAGES += \
     libswtcc \
     libsxs_exp_ctrl \
     libsysenv \
-    libsysutils \
     libtflite_native_gainference \
     libtflite_native_seginference \
     libthermalalgo \
     libthha \
-    libtinyalsa \
-    libtinyalsav2 \
-    libtinyxml2 \
     libtneclient \
     libtnev \
     libtouch_rejection \
@@ -1459,7 +1348,7 @@ PRODUCT_PACKAGES += \
     libtrancamJsonConvertor \
     libtrancam_filelockmgr \
     libtrancrypto \
-    libtranlog \
+    libtranlog-mtk \
     libtranradionet_mtk \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
@@ -1467,11 +1356,9 @@ PRODUCT_PACKAGES += \
     libtranssion_bodybeauty \
     libtranssion_forkexecwrap \
     libtrm \
-    libtrusty \
     libtvrfy \
     libudf \
     liburee_meta_drmkeyinstall \
-    libutils \
     libutinterface_custom_md \
     libutinterface_md \
     libvcodec_oal \
@@ -1481,7 +1368,6 @@ PRODUCT_PACKAGES += \
     libverno \
     libvia-ril \
     libviamipc-ril \
-    libvibratorutils \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
@@ -1490,8 +1376,7 @@ PRODUCT_PACKAGES += \
     libvpudv3a_vcodec \
     libwapi \
     libwatermark \
-    libwifi-hal \
-    libwifi-system-iface \
+    libwifi-hal-mtk \
     libwifical \
     libwifinvram \
     libwifinvramdata \
@@ -1499,9 +1384,7 @@ PRODUCT_PACKAGES += \
     libwo \
     libwpa_client \
     libwpfa \
-    libxml2 \
     libyuvenhance \
-    libz \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
@@ -1535,41 +1418,12 @@ PRODUCT_PACKAGES += \
     pbrohi5022q_mipi_raw_tuning \
     pbroov50d40_mipi_raw_IdxMgr \
     pbroov50d40_mipi_raw_tuning \
-    server_configurable_flags \
-    libaecsw \
     libaecsw_mtk \
-    libagc1sw \
     libagc1sw_mtk \
-    libagc2sw \
     libagc2sw_mtk \
-    libaudiopreprocessing \
-    libbassboostsw \
-    libbundleaidl \
-    libbundlewrapper \
-    libdownmix \
-    libdownmixaidl \
     libdtsaudioaidl \
-    libdynamicsprocessingaidl \
-    libdynproc \
-    libeffectproxy \
-    libenvreverbsw \
-    libequalizersw \
-    libextensioneffect \
-    libhapticgenerator \
-    libhapticgeneratoraidl \
-    libldnhncr \
-    libloudnessenhanceraidl \
-    libnssw \
     libnssw_mtk \
-    libpreprocessingaidl \
     libpreprocessingaidl_mtk \
-    libpresetreverbsw \
-    libreverbaidl \
-    libreverbwrapper \
-    libvirtualizersw \
-    libvisualizer \
-    libvisualizeraidl \
-    libvolumesw \
     vendor.aac.hardware.richtap.vibrator-V1-ndk \
     vendor.mediatek.framework.mtksf_ext-V2-ndk \
     vendor.mediatek.framework.mtksf_ext-V3-ndk \
@@ -1580,7 +1434,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.atci-V1-ndk \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
@@ -1607,8 +1461,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
     vendor.mediatek.hardware.mtklight-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
@@ -1643,8 +1495,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.tranHwInfo@1.0 \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.nxp.nxpese@1.0 \
     vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
     vendor.transsion.hardware.security.deviceauthen-V1-ndk \
     vendor.transsion.hardware.security.deviceauthen@2.0 \
@@ -1711,6 +1561,7 @@ PRODUCT_PACKAGES += \
     libnir_neon_driver_ndk.mtk \
     libtflite_mtk.mtk \
     libtflite_mtk \
+    vendor.mediatek.hardware.apuware.apusys-V5-ndk \
     vendor.mediatek.hardware.apuware.apusys@1.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
@@ -1718,6 +1569,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.apuware.utils@1.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp-V1-ndk \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
     com.android.hardware.cas \
@@ -1725,17 +1577,16 @@ PRODUCT_PACKAGES += \
     com.transsion.tranfacsdk \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
-    android.hardware.audio.service-aidl.xml \
+    android.hardware.audio.service-aidl-mtk.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
-    android.hardware.ir-service.example.xml \
+    android.hardware.ir-service.example-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
     android.hardware.tetheroffload-V1-service.xml \
-    android.hardware.wifi.supplicant.xml \
     bluetooth_audio.xml \
     fingerprint-default.xml \
-    gnss-default.xml \
+    gnss-default-mtk.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
     manifest_hwcomposer.xml \
@@ -1754,6 +1605,10 @@ PRODUCT_PACKAGES += \
     vendor.transsion.hardware.trancam.trancamserver.xml \
     vendor.transsion.hardware.tranfacaidl-service.xml \
     vendor.transsion.tranHwInfo.xml \
+    manifest_dsds.xml \
+    manifest_qsqs.xml \
+    manifest_ss.xml \
+    manifest_tsts.xml \
     AgentTest \
     aee_aedv64_v2 \
     aee_dumpstatev_v2 \
@@ -1761,24 +1616,19 @@ PRODUCT_PACKAGES += \
     atcid \
     audiocmdservice_atci \
     autobt \
-    awk \
     bat_authencali \
     bip \
-    boringssl_self_test64 \
     ccci_mdinit \
     ccci_rpcd \
     charon \
     chg_sence \
-    chipinfo \
     dconfig \
     dexecutor \
-    dmabuf_dump \
     dmc_core \
     doeapp-memtester \
     doeapp-sat \
     dreport \
     dtc_vendor \
-    dumpsys \
     epdg_wod \
     factory \
     fuelgauged \
@@ -1787,7 +1637,6 @@ PRODUCT_PACKAGES += \
     hostapd_cli \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.biometrics.fingerprint-service \
-    android.hardware.contexthub-service.tinysys \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
@@ -1837,7 +1686,6 @@ PRODUCT_PACKAGES += \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
     loghidlvendorservice \
-    logwrapper \
     mcDriverDaemon \
     md_monitor \
     md_monitor_ctrl \
@@ -1861,7 +1709,6 @@ PRODUCT_PACKAGES += \
     replayevent \
     rt5512_calibration \
     rttv_v2 \
-    sh \
     starter \
     storage_feature_cloudctl \
     stp_dump3 \
@@ -1869,7 +1716,6 @@ PRODUCT_PACKAGES += \
     thermal \
     thermal_manager \
     thermalloadalgod \
-    toolbox \
     toybox_vendor \
     tran_healthinfo_upload \
     tranfac_native \
@@ -1891,14 +1737,6 @@ PRODUCT_PACKAGES += \
     wpa_cli
 
 PRODUCT_PACKAGES += \
-    vendor_bin_getevent \
-    vendor_bin_getprop \
-    vendor_bin_modprobe \
-    vendor_bin_setprop \
-    vendor_bin_start \
-    vendor_bin_stop \
-    vendor_etc_boringssl_self_test_no_zygote_rc \
-    vendor_etc_boringssl_self_test_zygote32_rc \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \

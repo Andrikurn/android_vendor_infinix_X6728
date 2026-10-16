@@ -11,6 +11,7 @@ soong_namespace {
         "hardware/mediatek/libion_mtk",
         "hardware/millennium",
         "hardware/millennium/libtranlog",
+        "vendor/mediatek/ims",
     ],
 }
 
@@ -249,120 +250,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common-util",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common-util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@5.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@5.0.so",
-            ],
-            shared_libs: [
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@6.0-util",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@6.0-util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "android.hardware.audio.common-util",
-                "android.hardware.audio.common@6.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@6.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@6.0.so",
-            ],
-            shared_libs: [
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.audio.core-impl-mediatek",
     owner: "infinix",
     strip: {
@@ -374,6 +261,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.audio.core-impl-mediatek.so",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.audio.core.sounddose-V2-ndk",
                 "android.hardware.audio.core-V2-ndk",
@@ -392,98 +280,13 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libstagefright_foundation",
                 "liblog",
                 "libhardware",
                 "libmedia_helper",
                 "libutilscallstack",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@6.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.effect@6.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio@6.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio@6.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.biometrics.common.thread",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -540,679 +343,9 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.boot@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.boot@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.boot@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.boot@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.boot@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.device@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.device@3.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device@3.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.device@3.3",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device@3.3.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.device@3.4",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device@3.4.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.device@3.3",
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.device@3.5",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device@3.5.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.device@3.3",
-                "android.hardware.camera.device@3.4",
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.provider@2.4",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.provider@2.4.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@1.0",
-                "android.hardware.camera.device@3.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.camera.provider@2.5",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.provider@2.5.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@1.0",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.provider@2.4",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.allocator@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.allocator@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.mapper@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.allocator@3.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.allocator@3.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@3.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.allocator@4.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.allocator@4.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.bufferqueue@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.bufferqueue@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.bufferqueue@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.bufferqueue@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.common@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.common@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.common@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.common@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.common@1.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.common@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.mapper@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@2.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.mapper@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.mapper@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@3.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.mapper@3.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -1237,208 +370,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.light@2.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media.bufferpool@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media.bufferpool@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media.c2@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media.c2@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.omx@1.0",
-                "android.hardware.media@1.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media.c2@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media.c2@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "android.hardware.media@1.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media.c2@1.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media.c2@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "android.hardware.media@1.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media.omx@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media.omx@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.media@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.media@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -1494,347 +425,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.power@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.power@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.power@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.power@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.power@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.power@1.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.power@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.power@1.0",
-                "android.hardware.power@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.radio@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.radio@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.radio@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.radio@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.radio@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.renderscript@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.renderscript@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.sensors@2.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.sensors@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.sensors@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hidl.memory.token@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hidl.memory.token@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hidl.memory@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hidl.memory@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hidl.safe_union@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hidl.safe_union@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hidl.token@1.0-utils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hidl.token@1.0-utils.so",
-            ],
-            shared_libs: [
-                "android.hidl.token@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hidl.token@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hidl.token@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.system.suspend@1.0",
     owner: "infinix",
     strip: {
@@ -1844,34 +434,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/android.system.suspend@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.system.wifi.keystore@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -2021,7 +583,7 @@ cc_prebuilt_library_shared {
                 "libgralloctypes_mtk",
                 "libcutils",
                 "libhardware",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libdmabufheap",
                 "libz",
                 "libc++",
@@ -2549,7 +1111,7 @@ cc_prebuilt_library_shared {
                 "libdrm",
                 "libutils",
                 "libcutils",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -2656,13 +1218,14 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "android.hardware.soundtrigger3-V2-ndk",
                 "libbase",
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "liblog",
                 "libc++",
                 "libc",
@@ -2688,29 +1251,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/hw/audio.bluetooth.default.so",
             ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl_mtk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbluetooth_audio_session",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -3110,7 +1654,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "arm.graphics-V5-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libhidlbase",
                 "libdrm",
                 "android.hardware.graphics.mapper@4.0",
@@ -3382,7 +1926,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -3423,7 +1967,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -4561,101 +3105,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRSCpuRef",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRSCpuRef.so",
-            ],
-            shared_libs: [
-                "libRS_internal",
-                "liblog",
-                "libz",
-                "libbcinfo",
-                "libblas",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRSDriver",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRSDriver.so",
-            ],
-            shared_libs: [
-                "libRS_internal",
-                "libRSCpuRef",
-                "liblog",
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libnativewindow",
-                "libbcinfo",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libRS_internal",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libRS_internal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutilscallstack",
-                "libutils",
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libnativewindow",
-                "libft2",
-                "libbcinfo",
-                "libmediandk",
                 "libc++",
                 "libc",
                 "libm",
@@ -6271,7 +4720,7 @@ cc_prebuilt_library_shared {
                 "libcomposer_ext",
                 "libbinder_ndk",
                 "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V2-ndk",
+                "android.hardware.sensors-V3-ndk",
                 "android.hardware.sensors@1.0-convert-shared",
                 "libdrm",
                 "libc++",
@@ -6372,30 +4821,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaconfig_storage_read_api_cc",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaconfig_storage_read_api_cc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaedv",
     owner: "infinix",
     strip: {
@@ -6443,7 +4868,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -6493,34 +4918,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libalsautilsv2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalsautilsv2.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsav2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -6895,7 +5292,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudio_aidl_conversion_common_ndk",
+    name: "libaudio_aidl_conversion_common_ndk_prebuilt",
     owner: "infinix",
     strip: {
         none: true,
@@ -6903,24 +5300,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk.so",
-            ],
-            shared_libs: [
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libbase",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -6944,30 +5329,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libaudiocustparam_vendor",
                 "libaudioprimarydevicehalifclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioaidlcommon",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioaidlcommon.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -7301,36 +5662,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioutils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioutils.so",
-            ],
-            shared_libs: [
-                "libaconfig_storage_read_api_cc",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "server_configurable_flags",
-                "libspeexresampler",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaurisysdemo",
     owner: "infinix",
     strip: {
@@ -7344,82 +5675,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libavservices_minijail",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libavservices_minijail.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libminijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbase",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbase.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbcinfo",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbcinfo.so",
-            ],
-            shared_libs: [
                 "liblog",
                 "libc++",
                 "libc",
@@ -7461,86 +5716,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbinder",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbinder.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libtranlog",
-                "libapexsupport",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbinderdebug",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbinderdebug.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libblas",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libblas.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libblisrc32_vendor",
     owner: "infinix",
     strip: {
@@ -7558,43 +5733,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc++",
                 "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_aidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
-                "libaconfig_storage_read_api_cc",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "libhidlbase",
-                "libxml2",
-                "libflatbuffers-cpp",
-                "server_configurable_flags",
-                "libc++",
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
@@ -7624,7 +5762,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -7847,29 +5985,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libc++",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libc++.so",
-            ],
-            shared_libs: [
                 "libc",
                 "libm",
                 "libdl",
@@ -8441,7 +6556,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libmtkcam_stdutils",
                 "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V2-ndk",
+                "android.hardware.sensors-V3-ndk",
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
                 "libhidltransport",
@@ -9276,31 +7391,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamera_metadata",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamera_metadata.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcameracustom.plugin",
     owner: "infinix",
     strip: {
@@ -9373,30 +7463,6 @@ cc_prebuilt_library_shared {
                 "pbrogc08a8_mipi_raw_IdxMgr",
                 "pbrogc08a8_sub_mipi_raw_IdxMgr",
                 "libnvram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcap",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcap.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -9538,96 +7604,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libclang_rt.ubsan_standalone-aarch64-android",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libclang_rt.ubsan_standalone-aarch64-android.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_aidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_aidl.so",
-            ],
-            shared_libs: [
-                "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.media.bufferpool2-V2-ndk",
-                "android.hardware.media.c2-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_aidl_bufferpool2",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcodec2_fsr",
     owner: "infinix",
     strip: {
@@ -9647,7 +7623,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -9660,201 +7636,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libsync",
                 "libgralloc_extra",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hal_common",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hal_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libstagefright_foundation",
-                "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_hidl@1.0",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl_plugin.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -9926,7 +7707,7 @@ cc_prebuilt_library_shared {
                 "libcodec2_hidl@1.0",
                 "libcodec2_hidl@1.1",
                 "libcodec2_hidl@1.2",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -9994,7 +7775,7 @@ cc_prebuilt_library_shared {
                 "libcodec2_hidl@1.0",
                 "libcodec2_hidl@1.1",
                 "libcodec2_hidl@1.2",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -10229,30 +8010,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcompiler_rt",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcompiler_rt.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcomposer_ext",
     owner: "infinix",
     strip: {
@@ -10335,29 +8092,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcrypto",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcrypto.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcurl-md",
     owner: "infinix",
     strip: {
@@ -10429,32 +8163,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcutils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -10563,31 +8271,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libMcClient",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdmabufheap",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdmabufheap.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -11160,34 +8843,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfmq",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfmq.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libforkexecwrap",
     owner: "infinix",
     strip: {
@@ -11214,7 +8869,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
+    stem: "libformatter",
     owner: "infinix",
     strip: {
         none: true,
@@ -11357,7 +9013,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libgpud.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libcutils",
                 "libutils",
@@ -11473,34 +9129,6 @@ cc_prebuilt_library_shared {
                 "libion",
                 "libc",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloctypes",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloctypes.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common-V5-ndk",
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "liblog",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -11705,64 +9333,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhardware",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhardware.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhardware_legacy",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhardware_legacy.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.system.suspend-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libheichal",
     owner: "infinix",
     strip: {
@@ -11806,35 +9376,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libvcodec_oal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhidlbase",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhidlbase.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -12261,30 +9802,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libjpeg",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjpeg.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libkaraoke",
     owner: "infinix",
     strip: {
@@ -12417,29 +9934,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liblzma",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblzma.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmbrainSDKv",
     owner: "infinix",
     strip: {
@@ -12458,85 +9952,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbinder_ndk",
                 "vendor.mediatek.hardware.mbrain-V6-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmedia_helper",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmedia_helper.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmediautils_vendor",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmediautils_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmeminfo",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmeminfo.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libprocinfo",
                 "libc++",
                 "libc",
                 "libm",
@@ -12726,7 +10141,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl-mtk",
     owner: "infinix",
     strip: {
         none: true,
@@ -12734,7 +10149,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmnl.so",
+                "proprietary/vendor/lib64/libmnl-mtk.so",
             ],
             shared_libs: [
                 "libc++",
@@ -14124,7 +11539,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@2.0",
@@ -14172,7 +11587,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmtkcam_ulog",
                 "libbinder_ndk",
-                "android.hardware.camera.common-V2-ndk",
+                "android.hardware.camera.common-V1-ndk",
                 "android.hardware.camera.device-V3-ndk",
                 "libcamera_metadata",
                 "libc++",
@@ -16163,30 +13578,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libnvram",
     owner: "infinix",
     strip: {
@@ -16354,6 +13745,30 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libMcClient",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpcap-mtk",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpcap-mtk.so",
+            ],
+            shared_libs: [
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -16541,7 +13956,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap",
+                "libpcap-mtk",
                 "liblog",
                 "libhidlbase",
                 "libhidltransport",
@@ -16909,82 +14324,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libtinyxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libprocinfo",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprocinfo.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-21.12",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-21.12",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-lite-21.12.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -17405,6 +14744,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsegmention.so",
             ],
             shared_libs: [
+                "libtflite_native_gainference",
                 "libtflite_native_seginference",
                 "libc",
                 "libm",
@@ -17683,30 +15023,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libspeexresampler",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspeexresampler.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libssl-mdapp",
     owner: "infinix",
     strip: {
@@ -17722,30 +15038,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc",
                 "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libssl.so",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -17771,132 +15063,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libm",
                 "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_aidl_bufferpool2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_aidl_bufferpool2.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.media.bufferpool2-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferqueue_helper",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hidl.token@1.0-utils",
-                "libEGL",
-                "libnativewindow",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_foundation",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_foundation.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
@@ -18108,33 +15274,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsysutils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsysutils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libtflite_native_gainference",
     owner: "infinix",
     strip: {
@@ -18228,78 +15367,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "liblog",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyalsa",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyalsa.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyalsav2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyalsav2.so",
-            ],
-            shared_libs: [
-                "libclang_rt.ubsan_standalone",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyxml2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyxml2.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -18503,7 +15570,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtranlog",
+    name: "libtranlog-mtk",
     owner: "infinix",
     strip: {
         none: true,
@@ -18511,7 +15578,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libtranlog.so",
+                "proprietary/vendor/lib64/libtranlog-mtk.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -18678,6 +15745,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -18722,31 +15790,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtrusty",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtrusty.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -18843,33 +15886,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libutils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libutils.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libutinterface_custom_md",
     owner: "infinix",
     strip: {
@@ -18891,6 +15907,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -19121,31 +16138,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvibratorutils",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvibratorutils.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvolte_core_shr",
     owner: "infinix",
     strip: {
@@ -19363,7 +16355,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal",
+    name: "libwifi-hal-mtk",
     owner: "infinix",
     strip: {
         none: true,
@@ -19371,7 +16363,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
+                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
             ],
             shared_libs: [
                 "libbase",
@@ -19379,31 +16371,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libnl",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwifi-system-iface",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-system-iface.so",
-            ],
-            shared_libs: [
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -19601,29 +16568,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libxml2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxml2.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libyuvenhance",
     owner: "infinix",
     strip: {
@@ -19640,29 +16584,6 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libmediandk",
                 "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libz",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libz.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
@@ -20587,69 +17508,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "server_configurable_flags",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/server_configurable_flags.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaecsw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaecsw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaecsw_mtk",
     owner: "infinix",
     strip: {
@@ -20659,43 +17517,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/soundfx/libaecsw_mtk.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libagc1sw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libagc1sw.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V2-ndk",
@@ -20761,43 +17582,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagc2sw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libagc2sw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libagc2sw_mtk",
     owner: "infinix",
     strip: {
@@ -20821,202 +17605,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiopreprocessing",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbassboostsw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libbassboostsw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbundleaidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libbundleaidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libaudioutils",
-                "liblog",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbundlewrapper",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libbundlewrapper.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdownmix",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdownmix.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdownmixaidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdownmixaidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libbase",
-                "libbinder_ndk",
-                "libfmq",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioutils",
-                "libcutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -21071,381 +17659,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdynamicsprocessingaidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdynamicsprocessingaidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdynproc",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libdynproc.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeffectproxy",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libeffectproxy.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libeffects",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libenvreverbsw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libenvreverbsw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libequalizersw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libequalizersw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libextensioneffect",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libextensioneffect.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhapticgenerator",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libhapticgenerator.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libvibratorutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhapticgeneratoraidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libhapticgeneratoraidl.so",
-            ],
-            shared_libs: [
-                "libvibratorutils",
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libldnhncr",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libldnhncr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libloudnessenhanceraidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libloudnessenhanceraidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libfmq",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnssw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libnssw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libnssw_mtk",
     owner: "infinix",
     strip: {
@@ -21483,43 +17696,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpreprocessingaidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libpreprocessingaidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libpreprocessingaidl_mtk",
     owner: "infinix",
     strip: {
@@ -21543,245 +17719,6 @@ cc_prebuilt_library_shared {
                 "libaudioutils",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpresetreverbsw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libpresetreverbsw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libreverbaidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libreverbaidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libbinder_ndk",
-                "libfmq",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioutils",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libreverbwrapper",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libreverbwrapper.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvirtualizersw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libvirtualizersw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvisualizer",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libvisualizer.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvisualizeraidl",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libvisualizeraidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvolumesw",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libvolumesw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22064,7 +18001,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk",
     owner: "infinix",
     strip: {
         none: true,
@@ -22072,7 +18009,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk_mtk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -22188,7 +18125,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22766,61 +18703,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V2-ndk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower@1.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "vendor.mediatek.hardware.mtkpower@1.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -23606,7 +19488,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23633,7 +19515,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23660,7 +19542,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23736,61 +19618,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony-V1-ndk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.nxp.nxpese@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -25632,6 +21459,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.apusys-V5-ndk",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V5-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.apuware.apusys@1.0",
     owner: "infinix",
     strip: {
@@ -25827,6 +21680,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.apuware.xrp-V1-ndk",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.apuware.xrp@1.0",
     owner: "infinix",
     strip: {
@@ -25926,9 +21805,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.audio.service-aidl.xml",
+    name: "android.hardware.audio.service-aidl-mtk.xml",
     owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.audio.service-aidl.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.audio.service-aidl-mtk.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -25944,9 +21823,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.ir-service.example.xml",
+    name: "android.hardware.ir-service.example-mtk.xml",
     owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.ir-service.example-mtk.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -25989,15 +21868,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.wifi.supplicant.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "bluetooth_audio.xml",
     owner: "infinix",
     src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
@@ -26016,9 +21886,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "gnss-default.xml",
+    name: "gnss-default-mtk.xml",
     owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/gnss-default.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/gnss-default-mtk.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -26186,6 +22056,42 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
+prebuilt_etc_xml {
+    name: "manifest_dsds.xml",
+    owner: "infinix",
+    src: "proprietary/odm/etc/vintf/manifest_dsds.xml",
+    filename_from_src: true,
+    sub_dir: "vintf",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_qsqs.xml",
+    owner: "infinix",
+    src: "proprietary/odm/etc/vintf/manifest_qsqs.xml",
+    filename_from_src: true,
+    sub_dir: "vintf",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_ss.xml",
+    owner: "infinix",
+    src: "proprietary/odm/etc/vintf/manifest_ss.xml",
+    filename_from_src: true,
+    sub_dir: "vintf",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_tsts.xml",
+    owner: "infinix",
+    src: "proprietary/odm/etc/vintf/manifest_tsts.xml",
+    filename_from_src: true,
+    sub_dir: "vintf",
+    device_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "AgentTest",
     owner: "infinix",
@@ -26234,7 +22140,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libunwindstack",
                 "libselinux",
-                "libcrypto",
+                "libcrypto-v33",
                 "libz",
                 "libc",
                 "libdl",
@@ -26264,7 +22170,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libcrypto",
+                "libcrypto-v33",
                 "libz",
                 "libc",
                 "libdl",
@@ -26403,29 +22309,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "awk",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/awk",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "bat_authencali",
     owner: "infinix",
     target: {
@@ -26468,31 +22351,6 @@ cc_prebuilt_binary {
                 "libc",
                 "libdl",
                 "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "boringssl_self_test64",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test64",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -26617,14 +22475,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "chipinfo",
-    owner: "infinix",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "dconfig",
     owner: "infinix",
@@ -26660,32 +22510,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "dmabuf_dump",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dmabuf_dump",
-            ],
-            shared_libs: [
-                "libbase",
-                "libmeminfo",
                 "libc++",
                 "libc",
                 "libm",
@@ -26818,36 +22642,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/dtc_vendor",
             ],
             shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "dumpsys",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dumpsys",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libbinderdebug",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -27062,6 +22856,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.audio.service-aidl.mediatek",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "android.hardware.soundtrigger3-V2-ndk",
                 "android.hardware.audio.core-V2-ndk",
                 "android.hardware.bluetooth.audio-V4-ndk",
@@ -27081,7 +22876,7 @@ cc_prebuilt_binary {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.audio.core-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libmedia_helper",
                 "libstagefright_foundation",
@@ -27126,47 +22921,6 @@ cc_prebuilt_binary {
                 "android.hardware.biometrics.common-V3-ndk",
                 "android.hardware.biometrics.extension.fingerprint-V1-ndk",
                 "android.hardware.biometrics.common.thread",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.contexthub-service.tinysys",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.contexthub-service.tinysys",
-            ],
-            shared_libs: [
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.contexthub-V3-ndk",
-                "android.hardware.soundtrigger3-V1-ndk",
-                "android.media.soundtrigger.types-V1-ndk",
-                "chre_atoms_log",
-                "chremetrics-cpp",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libjsoncpp",
-                "liblog",
-                "libpower",
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "libutils",
-                "server_configurable_flags",
-                "libaconfig_storage_read_api_cc",
                 "libc++",
                 "libc",
                 "libm",
@@ -27255,7 +23009,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek",
             ],
             shared_libs: [
-                "android.hardware.graphics.common-V5-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -27692,6 +23446,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/tranradionet",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libtranssion_forkexecwrap",
                 "vendor.transsion.hardware.trannet-V4-ndk",
                 "vendor.transsion.hardware.tranradio-V6-ndk",
@@ -28347,7 +24102,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libutils",
                 "libexpat",
-                "libtranlog",
+                "libtranlog-mtk",
                 "libbinder_ndk",
                 "libbinder",
                 "vendor.transsion.performance.sched.aidl-V1-ndk",
@@ -28644,32 +24399,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "logwrapper",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/logwrapper",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "mcDriverDaemon",
     owner: "infinix",
     target: {
@@ -28852,7 +24581,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl-mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -28869,7 +24598,7 @@ cc_prebuilt_binary {
                 "libbase",
                 "libutils",
                 "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V2-ndk",
+                "android.hardware.sensors-V3-ndk",
                 "libbinder_ndk",
                 "android.hardware.sensors@1.0-convert-shared",
                 "libc++",
@@ -29377,27 +25106,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "sh",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/sh",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "starter",
     owner: "infinix",
     target: {
@@ -29430,7 +25138,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/storage_feature_cloudctl",
             ],
             shared_libs: [
-                "libtranlog",
+                "libtranlog-mtk",
                 "libutils",
                 "libcutils",
                 "libc",
@@ -29564,31 +25272,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "toolbox",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/toolbox",
-            ],
-            shared_libs: [
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -30145,62 +25828,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-install_symlink {
-    name: "vendor_bin_getevent",
-    soc_specific: true,
-    installed_location: "bin/getevent",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_getprop",
-    soc_specific: true,
-    installed_location: "bin/getprop",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_modprobe",
-    soc_specific: true,
-    installed_location: "bin/modprobe",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_setprop",
-    soc_specific: true,
-    installed_location: "bin/setprop",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_start",
-    soc_specific: true,
-    installed_location: "bin/start",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_bin_stop",
-    soc_specific: true,
-    installed_location: "bin/stop",
-    symlink_target: "/vendor/bin/toolbox",
-}
-
-install_symlink {
-    name: "vendor_etc_boringssl_self_test_no_zygote_rc",
-    soc_specific: true,
-    installed_location: "etc/boringssl_self_test.no_zygote.rc",
-    symlink_target: "/vendor/etc/boringssl_self_test.zygote64_32.rc",
-}
-
-install_symlink {
-    name: "vendor_etc_boringssl_self_test_zygote32_rc",
-    soc_specific: true,
-    installed_location: "etc/boringssl_self_test.zygote32.rc",
-    symlink_target: "/vendor/etc/boringssl_self_test.zygote64_32.rc",
 }
 
 install_symlink {
