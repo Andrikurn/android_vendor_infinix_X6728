@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2015, The Linux Foundation. All rights reserved.
+-->
+
+<!-- Assist library for NXP NFC extensions. -->
+<!-- NFBD: modify path for tran by xiang.liu6 20241101 start -->
+<permissions>
+    <library name="com.nxp.nfc"
+        file="/system_ext/framework/com.nxp.nfc.jar" />
+</permissions>
+<!-- NFBD: modify path for tran by xiang.liu6 20241101 end -->
