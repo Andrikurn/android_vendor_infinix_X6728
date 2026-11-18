@@ -16120,14 +16120,6 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_apex {
-    name: "com.android.hardware.cas",
-    owner: "infinix",
-    src: "proprietary/vendor/apex/com.android.hardware.cas.apex",
-    filename: "com.android.hardware.cas.apex",
-    soc_specific: true,
-}
-
-prebuilt_apex {
     name: "com.google.android.widevine.nonupdatable",
     owner: "infinix",
     src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",

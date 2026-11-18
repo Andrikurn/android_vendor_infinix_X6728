@@ -1195,7 +1195,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq_aidl-V2-ndk_systemext \
     vendor.mediatek.hardware.pq_aidl-V8-ndk_systemext \
-    com.android.hardware.cas \
     com.google.android.widevine.nonupdatable \
     com.android.compos \
     com.android.vndk.v31 \
