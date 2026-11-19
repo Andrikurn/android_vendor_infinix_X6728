@@ -510,7 +510,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/thermal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermal-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/trustonic_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic_kmsetkey_ca.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/v3avpud-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud-64b.rc \
