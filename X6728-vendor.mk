@@ -6,32 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6728
 
 PRODUCT_COPY_FILES += \
-    vendor/infinix/X6728/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/MD_SAR_and_PD_Feature_Control_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/MD_SAR_and_PD_Feature_Control_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/ASD_Scenario_Detection_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/ASD_Scenario_Detection_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/Antenna_Force_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/Antenna_Force_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/UAC_Condition_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/UAC_Condition_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/UAC_Information_Monitor_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/UAC_Information_Monitor_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/UAC_Scenario_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/UAC_Scenario_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/dynamic_em/antenna/tuner/MTK_Tuner_Controller_dynamic.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dynamic_em/antenna/tuner/MTK_Tuner_Controller_dynamic.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/init/init.thermald.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.thermald.rc \
-    vendor/infinix/X6728/proprietary/system_ext/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/kpoc_charger.rc \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/NfcNci_Nxp.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/NfcNci_Nxp.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/androidx.window.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/androidx.window.extensions.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/androidx.window.sidecar.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/androidx.window.sidecar.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/com.android.extensions.appfunctions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.extensions.appfunctions.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/com.transsion.settings.bluetooth.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.transsion.settings.bluetooth.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/permissions/system-ext-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-mediatek.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/sysconfig/android.telephony.satellite.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/android.telephony.satellite.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/db2_sar_cloud_config.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/db2_sar_cloud_config.json \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/db2_sar_config.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/db2_sar_config.json \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/mcc_sar_cloud_config.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/mcc_sar_cloud_config.json \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/mcc_sar_config.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/mcc_sar_config.json \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/nw_feature.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/nw_feature.prop \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/tangles-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/tangles-conf.xml \
-    vendor/infinix/X6728/proprietary/system_ext/etc/vconfig/celluar/ussd_balance.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vconfig/celluar/ussd_balance.json \
+    vendor/infinix/X6728/proprietary/recovery/root/vendor/firmware/chipone_ts_fw_00.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/chipone_ts_fw_00.bin \
+    vendor/infinix/X6728/proprietary/recovery/root/vendor/firmware/gt1151_default_firmware2.img:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/gt1151_default_firmware2.img \
+    vendor/infinix/X6728/proprietary/recovery/root/vendor/firmware/hdl_firmware_01.img:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hdl_firmware_01.img \
+    vendor/infinix/X6728/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
+    vendor/infinix/X6728/proprietary/system/etc/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt \
+    vendor/infinix/X6728/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
+    vendor/infinix/X6728/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/infinix/X6728/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/030c0000000000000000000000000000.drbin \
@@ -67,189 +49,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/9e412fe49fe460a16bada5a0eeef369f.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/9e412fe49fe460a16bada5a0eeef369f.tabin \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin \
     vendor/infinix/X6728/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/configs/TranssionWM.json:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/configs/TranssionWM.json \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/Africa.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/Africa.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/FangZhengKaiTiJian.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/FangZhengKaiTiJian.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/GL-Tsukiji-2go.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/GL-Tsukiji-2go.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans3_SemiBold.otf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans3_SemiBold.otf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans_No3_3_Light.otf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans_No3_3_Light.otf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans_No3_4_Regular.otf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/HurmeGeometricSans_No3_4_Regular.otf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OFL.txt:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OFL.txt \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-Bold.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-Bold.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-ExtraBold.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-ExtraBold.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-Light.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-Light.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-Medium.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-Medium.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-Regular.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-Regular.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/OpenSans-SemiBold.ttf:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/OpenSans-SemiBold.ttf \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/ROBOTO-MEDIUM.TTF:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/ROBOTO-MEDIUM.TTF \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/fonts/ROBOTO-REGULAR.TTF:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/fonts/ROBOTO-REGULAR.TTF \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/+5g-L.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/+5g-L.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/+5g-S.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/+5g-S.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/5g-L.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/5g-L.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/5g-S.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/5g-S.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/GrayBackground.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/GrayBackground.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/KLBackground.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/KLBackground.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/Logo.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/Logo.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/RedPoint-kl.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/RedPoint-kl.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/RedPoint.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/RedPoint.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/XXX.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/XXX.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/backdrop_a.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/backdrop_a.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/backdrop_b.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/backdrop_b.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/backdrop_c.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/backdrop_c.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/blank-L.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/blank-L.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/blank-S.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/blank-S.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/blank.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/blank.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/gopro.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/gopro.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/logo-zero40-5g.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/logo-zero40-5g.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/logo-zero40-Flip.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/logo-zero40-Flip.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/logo-zero40.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/logo-zero40.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/goldwatermark/resources/icons/redP.svg:$(TARGET_COPY_OUT_VENDOR)/data/camera/goldwatermark/resources/icons/redP.svg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/1delhi.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/1delhi.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/1diwali.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/1diwali.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/1holi.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/1holi.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_CapeTown.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_CapeTown.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Mauritius.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Mauritius.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Monochrome.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Monochrome.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Morocco.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Morocco.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Prairie.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Prairie.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Professional.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Professional.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Teal_Orange.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Teal_Orange.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/A_Vibrant.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/A_Vibrant.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_GoldenCity.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_GoldenCity.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Monochrome.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Monochrome.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Nostalgic.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Nostalgic.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_PinkDream.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_PinkDream.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Prairie.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Prairie.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Professional.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Professional.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Teal_Orange.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Teal_Orange.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/B_Vibrant.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/B_Vibrant.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_black_back.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_black_back.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_black_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_black_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_brown_back.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_brown_back.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_brown_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_brown_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_white_back.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_white_back.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Bright_white_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Bright_white_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_ClassicNeg.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_ClassicNeg.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_Monochrome.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_Monochrome.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_MoodyWarm.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_MoodyWarm.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_NorthernForest.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_NorthernForest.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_Professional.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_Professional.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_RetroStyle.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_RetroStyle.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_Teal_Orange.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_Teal_Orange.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/C_Vibrant.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/C_Vibrant.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Camon_back.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Camon_back.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Camon_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Camon_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Cyberpunk.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Cyberpunk.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/GoldenCity.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/GoldenCity.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/Vibrant.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/Vibrant.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam10a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam10a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam1a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam1a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam2a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam2a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam3a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam3a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam4a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam4a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam5a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam5a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam6a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam6a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam7a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam7a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam8a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam8a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/aicam9a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/aicam9a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/cameraUI.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/cameraUI.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/font.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/font.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/mask_16mm.jpg:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/mask_16mm.jpg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/mask_35mm.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/mask_35mm.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/mask_Vignetting.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/mask_Vignetting.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/noise.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/noise.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/streetphoto_bright.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/streetphoto_bright.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/streetphoto_gray.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/streetphoto_gray.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/streetphoto_retro.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/streetphoto_retro.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/streetphoto_slowframe.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/streetphoto_slowframe.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/super8mm.jpg:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/super8mm.jpg \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight1a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight1a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight2a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight2a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight3a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight3a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight4a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight4a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight5a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight5a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/TranCEERes/supernight6a.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/TranCEERes/supernight6a.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_black_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_black_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_black_rear.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_black_rear.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_brown_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_brown_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_brown_rear.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_brown_rear.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_white_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_white_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Bright_white_rear.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Bright_white_rear.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Camon_front.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Camon_front.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/lut/colorEnhance/imgstyle_lut/Camon_rear.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/lut/colorEnhance/imgstyle_lut/Camon_rear.png \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/M_Segment_DoubleLoss_V1.model:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/M_Segment_DoubleLoss_V1.model \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/Transsion_Segment_Pre.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/Transsion_Segment_Pre.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/animal_human_landmark_fp16.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/animal_human_landmark_fp16.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/eyes_detect_model:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/eyes_detect_model \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/face_attribute.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/face_attribute.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facebeauty/ITD_model_1280_C24_QAT_pretrain.dla:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facebeauty/ITD_model_1280_C24_QAT_pretrain.dla \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facebeauty/ITD_model_1536_C24_QAT_pretrain.dla:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facebeauty/ITD_model_1536_C24_QAT_pretrain.dla \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facebeauty/ITD_model_768_C24_QAT_pretrain.dla:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facebeauty/ITD_model_768_C24_QAT_pretrain.dla \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facerecheck.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facerecheck.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facerecheck.param:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facerecheck.param \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/facesr_ff_v4.0.13_MT6769_rOsC_lite@nb_53_noref_quality_35.2_20250425.model:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/facesr_ff_v4.0.13_MT6769_rOsC_lite@nb_53_noref_quality_35.2_20250425.model \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/lightforgender_addindian_tf113_test5.tflite:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lightforgender_addindian_tf113_test5.tflite \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/lightforgender_addindian_tf113_test5_converted.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lightforgender_addindian_tf113_test5_converted.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/lightforgenderandage_tf113_test4.tflite:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lightforgenderandage_tf113_test4.tflite \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/lightforgenderandage_tf113_test4_converted.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lightforgenderandage_tf113_test4_converted.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/morpho_hdsr_tuning_params.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/morpho_hdsr_tuning_params.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/scene.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/scene.mnn \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/segment.tflite:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/segment.tflite \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/model/segmentPre.tflite:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/segmentPre.tflite \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/AW_HDR_License.data:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/AW_HDR_License.data \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/AW_NightShot_License.data:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/AW_NightShot_License.data \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/pixsmart_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/pixsmart_hdr.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/pixsmart_mf_params1.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/pixsmart_mf_params1.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/pixsmart_mf_params2.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/pixsmart_mf_params2.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/bin/pixsmart_ns.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/bin/pixsmart_ns.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/black/hdr_config_gc08a8_17201960.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/black/hdr_config_gc08a8_17201960.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/black/hdr_config_gc08a8_17201986.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/black/hdr_config_gc08a8_17201986.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/black/hdr_config_hi5022q_17201981.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/black/hdr_config_hi5022q_17201981.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/black/hdr_config_ov50d40_17201988.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/black/hdr_config_ov50d40_17201988.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_0.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_0.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_1.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_1.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_gc08a8_17201960.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_gc08a8_17201960.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_gc08a8_17201986.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_gc08a8_17201986.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_hi5022q_17201981.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_hi5022q_17201981.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/pixsmart/hdr/xml/hdr_config_ov50d40_17201988.xml:$(TARGET_COPY_OUT_VENDOR)/data/camera/pixsmart/hdr/xml/hdr_config_ov50d40_17201988.xml \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/tran_fd/detector/rf_newsshratio4_newresult_opt.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/tran_fd/detector/rf_newsshratio4_newresult_opt.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/tran_fd/detector/rf_newsshratio4_newresult_opt.param:$(TARGET_COPY_OUT_VENDOR)/data/camera/tran_fd/detector/rf_newsshratio4_newresult_opt.param \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/tran_fd/tracker/det2.bin:$(TARGET_COPY_OUT_VENDOR)/data/camera/tran_fd/tracker/det2.bin \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/tran_fd/tracker/det2.param:$(TARGET_COPY_OUT_VENDOR)/data/camera/tran_fd/tracker/det2.param \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_1280x720.nv21:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_1280x720.nv21 \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_1280x720.yuyv:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_1280x720.yuyv \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_1920x1080.nv21:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_1920x1080.nv21 \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_1920x1080.yuyv:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_1920x1080.yuyv \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_2560x1440.nv21:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_2560x1440.nv21 \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_2560x1440.yuyv:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_2560x1440.yuyv \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_3840x2160.nv21:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_3840x2160.nv21 \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_3840x2160.yuyv:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_3840x2160.yuyv \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_640x480.nv21:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_640x480.nv21 \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_640x480.yuyv:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_640x480.yuyv \
-    vendor/infinix/X6728/proprietary/vendor/data/camera/watermark/watermark_config:$(TARGET_COPY_OUT_VENDOR)/data/camera/watermark/watermark_config \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_01:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_02:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_02 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_04:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_04 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_05:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_05 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_06:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_06 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_07:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_07 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_09:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_09 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_10:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_10 \
-    vendor/infinix/X6728/proprietary/vendor/etc/.tp/.thermal_policy_11:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_11 \
     vendor/infinix/X6728/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
-    vendor/infinix/X6728/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.ds \
     vendor/infinix/X6728/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/VideoLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.ds \
-    vendor/infinix/X6728/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
-    vendor/infinix/X6728/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
-    vendor/infinix/X6728/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
-    vendor/infinix/X6728/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/infinix/X6728/proprietary/vendor/etc/anc_siq/cache_hi5022q_17201981_back_g81:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_hi5022q_17201981_back_g81 \
     vendor/infinix/X6728/proprietary/vendor/etc/anc_siq/cache_ov50d40_17201988_back_g81:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_ov50d40_17201988_back_g81 \
     vendor/infinix/X6728/proprietary/vendor/etc/anc_siq/hc_opr_lite_cache_hi5022q_17201981_back_g81:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/hc_opr_lite_cache_hi5022q_17201981_back_g81 \
@@ -261,9 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2518:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2518 \
     vendor/infinix/X6728/proprietary/vendor/etc/apdb/APDB_MT6768_S01__W2518_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6768_S01__W2518_ENUM \
     vendor/infinix/X6728/proprietary/vendor/etc/audio/TranAudioConfiguration.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/TranAudioConfiguration.conf \
-    vendor/infinix/X6728/proprietary/vendor/etc/audio/botspk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/botspk.wav \
-    vendor/infinix/X6728/proprietary/vendor/etc/audio/rcv.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/rcv.wav \
-    vendor/infinix/X6728/proprietary/vendor/etc/audio/topspk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/topspk.wav \
+    vendor/infinix/X6728/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -399,44 +199,11 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/preset_music.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_music.bin \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/preset_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_ringtone.bin \
     vendor/infinix/X6728/proprietary/vendor/etc/audio_param/preset_voip.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voip.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/beq44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq44 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/beq48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/ctc:$(TARGET_COPY_OUT_VENDOR)/etc/dts/ctc \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_bluetooth44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth44k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_bluetooth48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth48k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_lineout48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_lineout48k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_speaker48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_speaker48k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_usb44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb44k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/current_usb48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb48k \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/customer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer.cfg \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/dts-eagle.lic:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts-eagle.lic \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/dts_audio_settings:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts_audio_settings \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/games_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory44 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/games_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/games_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_speaker48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/movie_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory44 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/movie_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/movie_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_speaker48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/music_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory44 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/music_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/music_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_speaker48 \
-    vendor/infinix/X6728/proprietary/vendor/etc/dts/off_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/off_speaker48 \
+    vendor/infinix/X6728/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP09.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP12.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/ecc_list_tran2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_tran2.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/firmware_slm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware_slm.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/firmware_slm_ata.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware_slm_ata.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/infinix/X6728/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -458,37 +225,28 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/init.insmod.mt6768.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6768.cfg \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.boot-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.mtk.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.charger.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.charger.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.nxp.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nxp.nfc.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
@@ -500,72 +258,32 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/mtkpower_applist-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkpower_applist-mtk-default.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_storageproxyd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_storageproxyd.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/trancamserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trancamserver.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/trustonic_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic_kmsetkey_ca.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/v3avpud-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud-64b.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.trustonic.tee-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Entrust.net_Certification_Authority_2048.cer \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/EntrustRootCertificationAuthorityG2_root.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_PCA_G3_Root.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GeoTrust_Primary_CA_G2_ECC.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GlobalSign_root_CA.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/GoDaddyRootCertificateAuthorityG2.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/IdenTrustCommercialRootCA1.cer \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/LibertyGlobalEnterprise-Root-CA-G1.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root-R3.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root-R3.cer \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/Root_CA_1003.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/USERTrustRSACertificationAuthority.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G4.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignClass3G5.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/gold.cer:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/gold.cer \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/root-singtel.crt:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/root-singtel.crt \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
-    vendor/infinix/X6728/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_appiot_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_appiot_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_autort_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_autort_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_concurrencytable_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_concurrencytable_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_game_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_game_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_gameiot_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_gameiot_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_groupstability_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_groupstability_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_mtbf_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_mtbf_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_perfstability_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_perfstability_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_pivm_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_pivm_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_smoothmodel_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_smoothmodel_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_spu_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_spu_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_runtime_video_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_runtime_video_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/mbrain/mbrain_static_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/mbrain/mbrain_static_config.bin \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.prebuilt.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.nfc.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/com.transsion.tranfacsdk.permission.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.transsion.tranfacsdk.permission.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/features_com.android.virt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/features_com.android.virt.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/permissions/handheld_core_hardware.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.prebuilt.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/infinix/X6728/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/infinix/X6728/proprietary/vendor/etc/libnfc-slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm.conf \
+    vendor/infinix/X6728/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/infinix/X6728/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/infinix/X6728/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
+    vendor/infinix/X6728/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/infinix/X6728/proprietary/vendor/etc/security/cacerts_supl/111e6273.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/111e6273.0 \
     vendor/infinix/X6728/proprietary/vendor/etc/security/cacerts_supl/3ad48a91.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/3ad48a91.0 \
     vendor/infinix/X6728/proprietary/vendor/etc/security/cacerts_supl/7651b327.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/7651b327.0 \
@@ -585,15 +303,16 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/security/cacerts_supl/lab/ed7b215e.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ed7b215e.0 \
     vendor/infinix/X6728/proprietary/vendor/etc/security/cacerts_supl/lab/ef4b31e6.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/lab/ef4b31e6.0 \
     vendor/infinix/X6728/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
-    vendor/infinix/X6728/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/thermalEngine/GameThermalEngineTypeList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalEngine/GameThermalEngineTypeList.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/thermalEngine/GameThermalEngineWhiteList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalEngine/GameThermalEngineWhiteList.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
+    vendor/infinix/X6728/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/infinix/X6728/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/infinix/X6728/proprietary/vendor/etc/wfd_source_capability.csv:$(TARGET_COPY_OUT_VENDOR)/etc/wfd_source_capability.csv \
+    vendor/infinix/X6728/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/infinix/X6728/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    vendor/infinix/X6728/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/infinix/X6728/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/infinix/X6728/proprietary/vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin \
     vendor/infinix/X6728/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
@@ -614,17 +333,18 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_1a_1_hdr.bin \
     vendor/infinix/X6728/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/infinix/X6728/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/infinix/X6728/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/infinix/X6728/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    av-audio-types-aidl-V3-ndk \
     AVCSecureVdecCA \
     TranCaptureFilter \
     VP9SecureVdecCA \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.biometrics.extension.fingerprint-V1-ndk \
     android.hardware.bluetooth.audio-impl-mediatek \
-    android.hardware.power-service-mediatek \
     arm.graphics-V5-ndk \
+    arm.mali.platform-V2-ndk \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -641,17 +361,14 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
-    android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
     audio.primary.mt6768 \
-    audio.r_submix.mt6768 \
     consumerir.common \
     gps.default \
     hwcomposer.mt6768 \
-    lights.mt6768 \
     mapper.mediatek \
     sensors.mt6768 \
-    thermal_hal \
+    sound_trigger.primary.default \
     tran_fingerprint.default \
     vendor.mediatek.hardware.audio-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
@@ -661,11 +378,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl \
     vendor.mediatek.hardware.gnss-impl \
-    vendor.mediatek.hardware.mtkpower-aidl-impl \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
-    vibrator.mt6768 \
+    vulkan.mali \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.core \
@@ -679,6 +395,7 @@ PRODUCT_PACKAGES += \
     lib3a.lce \
     lib3a.log \
     lib3a.n3d3a \
+    libAVCSecureVencCA \
     libDR \
     libDefaultFpsActor \
     libFrameRecord \
@@ -689,6 +406,7 @@ PRODUCT_PACKAGES += \
     libMtkSpeechEnh \
     libNoFpsActor \
     libOpenCL \
+    libQstAlgo \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -701,7 +419,6 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libTranASD \
     libTranAutoColorLevel \
-    libTranCmd \
     libTranColorEffectEngine \
     libTranColorEnhance \
     libTranDenoise \
@@ -725,9 +442,6 @@ PRODUCT_PACKAGES += \
     libTranVideoSupeNightYuv \
     libTran_Log \
     libTran_mtkPowerAPI \
-    libTranfacFunction \
-    libTranfacOverlay \
-    libTranfacUtils \
     libTransNS \
     libTransNSv2 \
     libTransSched \
@@ -742,13 +456,14 @@ PRODUCT_PACKAGES += \
     libabfadp \
     libaipe_bokeh \
     libanc_hdr \
-    libanc_hdr_adapter_hi5022q_17201981_back_g81 \
-    libanc_hdr_adapter_ov50d40_17201988_back_g81 \
-    libancbase \
     libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
+    libarm_mali_config_sysprops \
     libasd \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -758,6 +473,7 @@ PRODUCT_PACKAGES += \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
     libaudioloudc \
+    libaudiopolicyconfigxml_mtk_vendor \
     libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
     libaurisysdemo \
@@ -765,11 +481,9 @@ PRODUCT_PACKAGES += \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mtk \
     libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
+    libbt-vendor \
     libbwc \
     libc++_shared \
     libcalculatesharpness \
@@ -822,7 +536,6 @@ PRODUCT_PACKAGES += \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
-    libcharon-ss \
     libchromanr \
     libcodec2_fsr \
     libcodec2_mtk_c2store \
@@ -836,14 +549,10 @@ PRODUCT_PACKAGES += \
     libcolorlevel \
     libcomposer_ext \
     libconnfem \
-    libcrypto-mdapp \
-    libcurl-md \
     libcurl_xcap_md \
     libcustom_nvram \
     libcvsd_mtk \
-    libdecrypt \
     libdenoise \
-    libdts-eagle-shared \
     libeffecthal.base \
     libeyedetector \
     libfacedetector \
@@ -860,7 +569,7 @@ PRODUCT_PACKAGES += \
     libfile_op \
     libforkexecwrap \
     libformatter \
-    libgamehdr \
+    libfsmaudio \
     libged \
     libgpu_aux \
     libgpud \
@@ -876,13 +585,10 @@ PRODUCT_PACKAGES += \
     libheichal \
     libhevce_sb.ca7.android \
     libhwm \
-    libhydra \
-    libicd_decoder \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libimsg_log \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
@@ -890,11 +596,12 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libkaraoke \
-    libkmsetkey \
     liblpcnr \
     liblvacfs_wrapper \
+    libmbrainSDKv \
     libmfllcore \
     libmipc \
+    libmmprofile \
     libmnetlink_v104 \
     libmnl \
     libmorpho_HDSR \
@@ -906,6 +613,7 @@ PRODUCT_PACKAGES += \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtk_bsg \
+    libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
     libmtkcam.eventcallback \
@@ -987,6 +695,7 @@ PRODUCT_PACKAGES += \
     libmtkrillog \
     libmtkrilutils \
     libmtkshifter_vendor \
+    libmtkspparser \
     libmtksysutils \
     libmtktinyxml \
     libmtkutils \
@@ -1001,7 +710,6 @@ PRODUCT_PACKAGES += \
     libpixsmart_mf_base2 \
     libpixsmart_ns \
     libportrait_repair_ppl3_ocl \
-    libpower_timer \
     libpq_cust_base \
     libpqframework \
     libpqhdrmetaparser \
@@ -1012,7 +720,6 @@ PRODUCT_PACKAGES += \
     librcs_volte_core \
     libremosaic_wrapper \
     libremosaiclib \
-    librgbwlightsensor \
     librilfusion \
     librmsclib1 \
     librt_extamp_intf \
@@ -1021,41 +728,34 @@ PRODUCT_PACKAGES += \
     libsegmentionPre \
     libsensor_custom \
     libsilkybrightnesscore \
-    libsimaka \
+    libsimlock \
     libskhynix_q2b_5022Q_shared \
     libsmartdetector \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libssl-mdapp \
     libst_mobile \
     libstblur_capture_api \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
-    libstrongswan \
     libswtcc \
     libsxs_exp_ctrl \
     libsysenv \
     libtflite_native_gainference \
     libtflite_native_seginference \
-    libthermalalgo \
     libthha \
     libtneclient \
-    libtnev \
     libtouch_rejection \
     libtran_hal \
     libtrancamJsonConvertor \
     libtrancam_filelockmgr \
     libtranlog \
     libtranssion_bodybeauty \
-    libtranssion_forkexecwrap \
     libtrm \
-    libudf \
     liburee_meta_drmkeyinstall \
     libutinterface_custom_md \
     libutinterface_md \
     libvcodec_oal \
     libvcodec_utility_v3a \
-    libvcodecdrv_header_stub \
     libvcodecdrv_v3a \
     libverno \
     libvia-ril \
@@ -1064,18 +764,21 @@ PRODUCT_PACKAGES += \
     libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
-    libvpu5 \
     libvpudv3a_vcodec \
     libwatermark \
+    libwifi-hal-mtk \
+    libwifinvram \
+    libwifinvramdata \
     libwo \
     libwpfa \
     libyuvenhance \
     libdpframework \
     libmmagent \
     libmml \
-    libmtk_drvb \
+    libmmlpqImpl \
     libpq_sec \
     libpqparamparser \
+    mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     nfc_nci_nxp_snxxx_v \
     ov50d40_mipi_raw_IdxMgr \
@@ -1096,12 +799,6 @@ PRODUCT_PACKAGES += \
     pbrohi5022q_mipi_raw_tuning \
     pbroov50d40_mipi_raw_IdxMgr \
     pbroov50d40_mipi_raw_tuning \
-    libaecsw_mtk \
-    libagc1sw_mtk \
-    libagc2sw_mtk \
-    libdtsaudioaidl \
-    libnssw_mtk \
-    libpreprocessingaidl_mtk \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.audio@6.1 \
@@ -1120,14 +817,14 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V3-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
+    vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
+    vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -1159,96 +856,151 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V8-ndk \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
+    vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc_aidl-V1-ndk \
     vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
-    vendor.transsion.hardware.tne.tneengine-V1-ndk \
-    vendor.transsion.hardware.tne.tneengine@1.0 \
     vendor.transsion.hardware.trancam.trancamserver-V1-ndk \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
-    vendor.transsion.hardware.transtorage.storage-V1-ndk \
     vendor.transsion.performance.sched@1.0 \
     vendor.trustonic.tee-V1-ndk \
     vendor.trustonic.tui-V1-ndk \
     vpp_hdrmeta_handler_plugin \
+    libapu_mdw_ext.mtk \
+    libapuwareapusys.mtk \
+    libapuwareapusys_v2.mtk \
+    libapuwarehmp.mtk \
+    libapuwareutils.mtk \
+    libapuwareutils_v2.mtk \
+    libapuwarexrp.mtk \
+    libapuwarexrp_v2.mtk \
     libarmnn_ndk.mtk \
     libcmdl_ndk.mtk \
-    libcomposer_ext_systemext \
-    libdrmmtkutil \
-    libdrmmtkwhitelist \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libmvpu_cic_ci_compiler.mtk \
+    libmvpu_cic_ci_compiler_25.mtk \
+    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
+    libmvpu_clc_14_mvpu_elf_25.mtk \
+    libmvpu_clc_14_mvpu_utility_25.mtk \
+    libmvpu_clc_mvpu_debuginfo.mtk \
+    libmvpu_clc_mvpu_elf.mtk \
+    libmvpu_clc_mvpu_utility.mtk \
+    libmvpu_config.mtk \
+    libmvpu_engine.mtk \
+    libmvpu_engine_25.mtk \
+    libmvpu_engine_25_pub.mtk \
+    libmvpu_engine_pub.mtk \
+    libmvpu_pattern.mtk \
+    libmvpu_pattern_25.mtk \
+    libmvpu_pattern_25_pub.mtk \
+    libmvpu_pattern_pub.mtk \
+    libmvpu_runtime.mtk \
+    libmvpu_runtime_25.mtk \
+    libmvpu_runtime_25_pub.mtk \
+    libmvpu_runtime_builtin.mtk \
+    libmvpu_runtime_builtin_25.mtk \
+    libmvpu_runtime_pub.mtk \
+    libmvpuop25_mtk_cv.mtk \
+    libmvpuop25_mtk_nn.mtk \
+    libmvpuop_mtk_cv.mtk \
+    libmvpuop_mtk_nn.mtk \
     libneuron_graph_delegate.mtk \
     libneuronusdk_adapter.mtk \
     libnir_neon_driver_ndk.mtk \
-    libshowlogo \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libteeservice_client.trustonic \
     libtflite_mtk.mtk \
     libtflite_mtk \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.apuware.apusys-V5-ndk \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils-V1-ndk \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.composer_ext-V1-ndk_systemext \
-    vendor.mediatek.hardware.composer_ext@1.0_systemext \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mtkpower_applist-V2-ndk_systemext \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq_aidl-V2-ndk_systemext \
-    vendor.mediatek.hardware.pq_aidl-V8-ndk_systemext \
+    vendor.mediatek.hardware.apuware.xrp-V1-ndk \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
-    com.android.compos \
-    com.android.vndk.v31 \
-    com.android.vndk.v33 \
-    com.android.vndk.v34 \
-    android.hardware.usb-aidl-service.mediatek.xml \
+    ImsService \
+    MtkGbaService \
+    MtkTelephonyAssist \
+    mediatek-ims-base \
+    mediatek-telephony-base \
+    mediatek-ims-extension-plugin \
+    android.hardware.audio.effect.service-aidl.xml \
+    android.hardware.audio.service-aidl.mediatek.xml \
+    android.hardware.gatekeeper-service.trustonic.xml \
+    android.hardware.ir-service.example.xml \
+    android.hardware.security.keymint-service.trustonic.xml \
+    android.hardware.security.secureclock-service.trustonic.xml \
+    android.hardware.security.sharedsecret-service.trustonic.xml \
+    android.hardware.tetheroffload-V1-service.xml \
+    bluetooth_audio_mtk.xml \
+    fingerprint-default.xml \
+    gnss-aosp-mtk.xml \
+    gnss-mtk.xml \
+    manifest_allocator.xml \
+    manifest_hwcomposer.xml \
+    manifest_media_c2_default.xml \
+    manifest_transsion.xml \
+    mapper.mediatek.xml \
+    mtk_lbs_service.xml \
+    nfc-service-nxp.xml \
+    vendor.transsion.hardware.trancam.trancamserver.xml \
+    bip \
     ccci_mdinit \
     ccci_rpcd \
-    charon \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.biometrics.fingerprint-service \
-    android.hardware.boot-service.mtk \
-    android.hardware.contexthub-service.tinysys \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator-V2-service-mediatek \
     android.hardware.graphics.composer@3.3-service \
-    android.hardware.lights-service.mediatek \
+    android.hardware.ir-service.example \
     android.hardware.media.c2-mediatek-64b \
-    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.nfc-service.nxp_v \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
-    android.hardware.sensors-service.multihal \
-    android.hardware.usb-aidl-service.mediatekv1.0 \
-    android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
-    vendor.aidlstorage@1.0-service \
+    trancamserver \
+    vendor.mediatek.hardware.mmagent-service \
+    vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.mms-service \
-    vendor.mediatek.hardware.mtkpower-service.mediatek \
-    vendor.mediatek.hardware.mtkpower_applist-service.mediatek \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.trustonic.tee-service \
     vtservice_aidl \
     ipsec_mon \
-    kmsetkey_ca.trustonic \
+    lib3a.ccu.dm \
+    lib3a.ccu.pm \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
-    netdagent \
-    netdc \
+    mtk_lbs_service \
+    mtk_storageproxyd \
+    muxreport \
     nvram_daemon \
-    rcs_volte_stack \
-    stroke \
-    thermal \
-    thermal_manager \
-    thermalloadalgod \
     v3avpud-64b \
     volte_clientapi_ua \
     volte_imcb \
@@ -1260,12 +1012,17 @@ PRODUCT_PACKAGES += \
     wfca \
     wmt_launcher \
     wmt_loader \
-    kpoc_charger \
-    thermald
+    android.hardware.audio.parameter_parser.service \
+    vtservice
 
 PRODUCT_PACKAGES += \
-    vendor_lib64_libnir_neon_driver_so \
-    vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
-    vendor_lib64_hw_vulkan_mt6768_so \
     vendor_lib64_libdpframework_so \
-    vendor_lib64_libmtk_drvb_so
+    vendor_lib64_libmmagent_so \
+    vendor_lib64_libmml_so \
+    vendor_lib64_libmmlpqImpl_so \
+    vendor_lib64_libpq_sec_so \
+    vendor_lib64_libpqparamparser_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-telephony-base

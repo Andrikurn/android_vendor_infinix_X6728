@@ -6,7 +6,7 @@ AB_OTA_PARTITIONS += \
     gz \
     lk \
     logo \
-    modem \
+    md1img \
     scp \
     spmfw \
     sspm \
