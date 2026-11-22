@@ -263,7 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtk_storageproxyd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_storageproxyd.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/trancamserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trancamserver.rc \
@@ -780,7 +779,6 @@ PRODUCT_PACKAGES += \
     libpqparamparser \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
-    nfc_nci_nxp_snxxx_v \
     ov50d40_mipi_raw_IdxMgr \
     ov50d40_mipi_raw_tuning \
     pblcgc08a8_mipi_raw_IdxMgr \
@@ -802,9 +800,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
@@ -817,14 +812,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V3-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -844,7 +837,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
     vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
@@ -958,7 +950,6 @@ PRODUCT_PACKAGES += \
     manifest_transsion.xml \
     mapper.mediatek.xml \
     mtk_lbs_service.xml \
-    nfc-service-nxp.xml \
     vendor.transsion.hardware.trancam.trancamserver.xml \
     bip \
     ccci_mdinit \
@@ -975,7 +966,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.ir-service.example \
     android.hardware.media.c2-mediatek-64b \
-    android.hardware.nfc-service.nxp_v \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
     camerahalserver \

@@ -13865,39 +13865,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci_nxp_snxxx_v",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/nfc_nci_nxp_snxxx_v.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "vendor.nxp.nxpese@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "ov50d40_mipi_raw_IdxMgr",
     owner: "infinix",
     strip: {
@@ -14442,95 +14409,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.audio.common-V3-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.atms-V1-ndk",
     owner: "infinix",
     strip: {
@@ -14853,34 +14731,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.lbs@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mbrain-V6-ndk",
     owner: "infinix",
     strip: {
@@ -15027,31 +14877,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V1-ndk",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -15563,34 +15388,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.netdagent@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -18390,15 +18187,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "nfc-service-nxp.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/nfc-service-nxp.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.transsion.hardware.trancam.trancamserver.xml",
     owner: "infinix",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver.xml",
@@ -18899,39 +18687,6 @@ cc_prebuilt_binary {
                 "libcodec2_mtk_vdec",
                 "libcodec2_mtk_venc",
                 "android.hardware.media.c2-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.nfc-service.nxp_v",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.nfc-service.nxp_v",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "android.hardware.nfc-V1-ndk",
-                "nfc_nci_nxp_snxxx_v",
-                "libhardware",
-                "vendor.nxp.nxpnfc_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
