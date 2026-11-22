@@ -12317,6 +12317,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsegmention.so",
             ],
             shared_libs: [
+                "libtflite_native_gainference",
                 "libtflite_native_seginference",
                 "libc",
                 "libm",
