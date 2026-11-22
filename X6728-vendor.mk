@@ -940,7 +940,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
-    android.hardware.ir-service.infinix.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
     android.hardware.security.sharedsecret-service.trustonic.xml \
