@@ -18239,9 +18239,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "fingerprint-default.xml",
+    name: "fingerprint-transsion.xml",
     owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-default.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-transsion.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,

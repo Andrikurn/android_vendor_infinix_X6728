@@ -231,13 +231,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.ir-service.infinix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.infinix.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/infinix/X6728/proprietary/vendor/etc/init/fingerprint-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-default.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/init/fingerprint-transsion.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-transsion.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -945,7 +945,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-service.trustonic.xml \
     android.hardware.tetheroffload-V1-service.xml \
     bluetooth_audio_mtk.xml \
-    fingerprint-default.xml \
+    fingerprint-transsion.xml \
     gnss-aosp-mtk.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
