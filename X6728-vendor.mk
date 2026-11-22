@@ -858,7 +858,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
     vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfc_aidl-V1-ndk \
     vendor.transsion.hardware.biometrics.fingerprint-V1-ndk \
     vendor.transsion.hardware.trancam.trancamserver-V1-ndk \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
