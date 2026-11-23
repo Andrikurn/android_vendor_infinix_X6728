@@ -2241,6 +2241,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMtkSpeechEnh_swb",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMtkSpeechEnh_swb.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libNoFpsActor",
     owner: "infinix",
     strip: {
@@ -8068,6 +8092,36 @@ cc_prebuilt_library_shared {
                 "libc++_shared",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkmsetkey",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkmsetkey.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libMcClient",
+                "libcutils",
+                "libsysenv",
+                "libnvram",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -18107,18 +18161,6 @@ prebuilt_apex {
 }
 
 android_app_import {
-    name: "ImsService",
-    owner: "infinix",
-    apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "MtkGbaService",
     owner: "infinix",
     apk: "proprietary/system_ext/priv-app/MtkGbaService/MtkGbaService.apk",
@@ -19322,6 +19364,34 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "kmsetkey_ca.trustonic",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/kmsetkey_ca.trustonic",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libsysenv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
 sh_binary {
     name: "lib3a.ccu.dm",
     owner: "infinix",
@@ -19517,6 +19587,67 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "netdagent",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/netdagent",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libforkexecwrap",
+                "libutils",
+                "libifcutils_mtk",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.netdagent-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "netdc",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/netdc",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",

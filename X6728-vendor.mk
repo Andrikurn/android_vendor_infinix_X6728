@@ -274,10 +274,12 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/vendor.trustonic.tee-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee-service.rc \
     vendor/infinix/X6728/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
+    vendor/infinix/X6728/proprietary/vendor/etc/le_audio_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/le_audio_codec_capabilities.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/libnfc-slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/infinix/X6728/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/infinix/X6728/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
     vendor/infinix/X6728/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -403,6 +405,7 @@ PRODUCT_PACKAGES += \
     libJpgEncPipe \
     libMcClient \
     libMtkSpeechEnh \
+    libMtkSpeechEnh_swb \
     libNoFpsActor \
     libOpenCL \
     libQstAlgo \
@@ -595,6 +598,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libkaraoke \
+    libkmsetkey \
     liblpcnr \
     liblvacfs_wrapper \
     libmbrainSDKv \
@@ -931,7 +935,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
-    ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
     mediatek-ims-base \
@@ -985,6 +988,7 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee-service \
     vtservice_aidl \
     ipsec_mon \
+    kmsetkey_ca.trustonic \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
     mcDriverDaemon \
@@ -993,6 +997,8 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service \
     mtk_storageproxyd \
     muxreport \
+    netdagent \
+    netdc \
     nvram_daemon \
     v3avpud-64b \
     volte_clientapi_ua \
